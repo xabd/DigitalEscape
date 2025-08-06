@@ -1,0 +1,294 @@
+[
+  {
+    "slug": "protonmail",
+    "name": "ProtonMail",
+    "description": "End-to-end encrypted email service based in Switzerland.",
+    "link": "https://proton.me/mail",
+    "features": ["Zero-access encryption", "Open-source", "No ads"],
+    "tags": ["email", "encrypted", "secure"]
+  },
+  {
+    "slug": "mullvad-vpn",
+    "name": "Mullvad VPN",
+    "description": "Privacy-first VPN that doesn’t require an email address.",
+    "link": "https://mullvad.net",
+    "features": ["No logs", "Accepts cash payments", "Independent audits"],
+    "tags": ["vpn", "anonymous", "secure"]
+  },
+  {
+    "slug": "bitwarden",
+    "name": "Bitwarden",
+    "description": "Open-source password manager with secure sharing features.",
+    "link": "https://bitwarden.com",
+    "features": ["Cross-platform", "Self-hostable", "Free tier available"],
+    "tags": ["password", "manager", "open-source"]
+  },
+  {
+    "slug": "nordvpn",
+    "name": "NordVpn",
+    "description": "VPN stands for 'virtual private network' It's a service that provides you with secure and private access to the internet.",
+    "link": "https://nordvpn.com/fr",
+    "features": [
+      "L'un des VPN les plus rapides au monde.",
+      "Sécurise jusqu'à 10 appareils avec un seul compte.",
+      "Vous aide à éviter le phishing, les arnaques et les logiciels malveillants."
+    ],
+    "tags": ["vpn", "encrypted", "secure", "apps"]
+  },
+  {
+    "slug": "privadosecure",
+    "name": "Privado Secure",
+    "description": "Secure VPN with strict no-log policy and free data plan.",
+    "link": "https://privadovpn.com",
+    "features": ["No logs", "10GB free", "Swiss-based"],
+    "tags": ["vpn", "free", "secure"]
+  },
+  {
+    "slug": "tutanota",
+    "name": "Tutanota",
+    "description": "Encrypted email provider based in Germany.",
+    "link": "https://tutanota.com",
+    "features": ["End-to-end encryption", "No ads", "Open-source"],
+    "tags": ["email", "encrypted", "open-source"]
+  },
+  {
+    "slug": "cryptpad",
+    "name": "CryptPad",
+    "description": "Private and encrypted online office suite.",
+    "link": "https://cryptpad.fr",
+    "features": ["Collaborative", "Zero knowledge", "No tracking"],
+    "tags": ["notes", "encrypted", "cloud"]
+  },
+  {
+    "slug": "simplelogin",
+    "name": "SimpleLogin",
+    "description": "Email aliasing service to protect your real address.",
+    "link": "https://simplelogin.io",
+    "features": ["Alias emails", "Open-source", "Self-hostable"],
+    "tags": ["email", "alias", "privacy"]
+  },
+  {
+    "slug": "standardnotes",
+    "name": "Standard Notes",
+    "description": "Encrypted note-taking app with sync support.",
+    "link": "https://standardnotes.com",
+    "features": ["End-to-end encryption", "Extensions", "Cross-platform"],
+    "tags": ["notes", "secure", "encrypted"]
+  },
+  {
+    "slug": "duckduckgo",
+    "name": "DuckDuckGo",
+    "description": "Privacy-first search engine with no tracking.",
+    "link": "https://duckduckgo.com",
+    "features": ["No tracking", "Instant answers", "Mobile browser"],
+    "tags": ["search", "privacy", "anonymous"]
+  },
+  {
+    "slug": "startpage",
+    "name": "Startpage",
+    "description": "Google-powered search with full privacy.",
+    "link": "https://startpage.com",
+    "features": ["Anonymous search", "No logs", "EU-based"],
+    "tags": ["search", "anonymous", "secure"]
+  },
+  {
+    "slug": "brave",
+    "name": "Brave Browser",
+    "description": "Fast browser with built-in ad-blocker and privacy tools.",
+    "link": "https://brave.com",
+    "features": ["Ad blocker", "Tor support", "Rewards"],
+    "tags": ["browser", "privacy", "secure"]
+  },
+  {
+    "slug": "signal",
+    "name": "Signal",
+    "description": "Open-source private messaging app with end-to-end encryption.",
+    "link": "https://signal.org",
+    "features": [
+      "No metadata",
+      "Self-destructing messages",
+      "Voice & video calls"
+    ],
+    "tags": ["messaging", "encrypted", "open-source"]
+  },
+  {
+    "slug": "session",
+    "name": "Session",
+    "description": "Fully anonymous messenger that requires no phone number.",
+    "link": "https://getsession.org",
+    "features": ["Decentralized", "No phone required", "Secure"],
+    "tags": ["messaging", "anonymous", "secure"]
+  },
+  {
+    "slug": "element",
+    "name": "Element",
+    "description": "Decentralized chat app based on Matrix protocol.",
+    "link": "https://element.io",
+    "features": ["Encrypted", "Self-hostable", "Federated"],
+    "tags": ["messaging", "open-source", "decentralized"]
+  },
+  {
+    "slug": "keeweb",
+    "name": "KeeWeb",
+    "description": "Open-source KeePass-compatible password manager.",
+    "link": "https://keeweb.info",
+    "features": ["Offline support", "Browser sync", "Free"],
+    "tags": ["password", "manager", "open-source"]
+  },
+  {
+    "slug": "veracrypt",
+    "name": "VeraCrypt",
+    "description": "Open-source disk encryption tool.",
+    "link": "https://www.veracrypt.fr",
+    "features": ["File encryption", "Cross-platform", "Secure containers"],
+    "tags": ["encryption", "open-source", "secure"]
+  },
+  {
+    "slug": "tails",
+    "name": "Tails OS",
+    "description": "Live OS for anonymous browsing and privacy.",
+    "link": "https://tails.net",
+    "features": ["Live boot", "Tor preinstalled", "No traces"],
+    "tags": ["os", "anonymous", "secure"]
+  },
+  {
+    "slug": "qtox",
+    "name": "qTox",
+    "description": "Secure and private messaging client using the Tox protocol.",
+    "link": "https://qtox.github.io",
+    "features": ["Peer-to-peer", "Encrypted", "Open-source"],
+    "tags": ["messaging", "p2p", "secure"]
+  },
+  {
+    "slug": "jitsi",
+    "name": "Jitsi Meet",
+    "description": "Encrypted video conferencing solution.",
+    "link": "https://meet.jit.si",
+    "features": ["No sign-up", "Open-source", "Secure"],
+    "tags": ["video", "encrypted", "open-source"]
+  },
+  {
+    "slug": "cryptomator",
+    "name": "Cryptomator",
+    "description": "Encrypt your cloud storage files easily.",
+    "link": "https://cryptomator.org",
+    "features": [
+      "Encrypt Dropbox/Google Drive",
+      "Open-source",
+      "Cross-platform"
+    ],
+    "tags": ["storage", "encrypted", "secure"]
+  },
+  {
+    "slug": "bitmask",
+    "name": "Bitmask",
+    "description": "VPN and encrypted email client.",
+    "link": "https://bitmask.net",
+    "features": ["Multi-provider", "Secure", "FOSS"],
+    "tags": ["vpn", "email", "secure"]
+  },
+  {
+    "slug": "librewolf",
+    "name": "LibreWolf",
+    "description": "Privacy-focused Firefox fork with telemetry disabled.",
+    "link": "https://librewolf.net",
+    "features": ["No telemetry", "Hardened settings", "Open-source"],
+    "tags": ["browser", "privacy", "secure"]
+  },
+  {
+    "slug": "posteo",
+    "name": "Posteo",
+    "description": "Privacy-respecting German email provider.",
+    "link": "https://posteo.de",
+    "features": ["Green hosting", "Encrypted storage", "No ads"],
+    "tags": ["email", "encrypted", "sustainable"]
+  },
+  {
+    "slug": "skiff-mail",
+    "name": "Skiff Mail",
+    "description": "End-to-end encrypted email with modern UI.",
+    "link": "https://skiff.com/mail",
+    "features": ["Encrypted", "Free plan", "Cross-device sync"],
+    "tags": ["email", "encrypted", "open-source"]
+  },
+  {
+    "slug": "element",
+    "name": "Element",
+    "description": "A secure messaging app built on the Matrix protocol for decentralized communication.",
+    "link": "https://element.io/",
+    "features": ["End-to-end encryption", "Decentralized", "Cross-platform"],
+    "tags": ["messaging", "decentralized", "encryption"]
+  },
+  {
+    "slug": "cryptpad",
+    "name": "CryptPad",
+    "description": "A privacy-first collaboration suite with encrypted documents, spreadsheets, and more.",
+    "link": "https://cryptpad.org/",
+    "features": ["Zero knowledge", "Collaborative editing", "Open source"],
+    "tags": ["office", "productivity", "encryption"]
+  },
+  {
+    "slug": "writefreely",
+    "name": "WriteFreely",
+    "description": "Minimalist, open-source platform for writing and publishing without tracking or ads.",
+    "link": "https://writefreely.org/",
+    "features": ["Federated", "Markdown support", "Ad-free"],
+    "tags": ["blogging", "writing", "federated"]
+  },
+  {
+    "slug": "k9-mail",
+    "name": "K-9 Mail",
+    "description": "Open-source email client for Android with PGP support and no tracking.",
+    "link": "https://k9mail.app/",
+    "features": ["OpenPGP", "IMAP/POP3 support", "Android"],
+    "tags": ["email", "android", "open-source"]
+  },
+  {
+    "slug": "tuta",
+    "name": "Tuta",
+    "description": "Secure and ad-free email service based in Germany with end-to-end encryption.",
+    "link": "https://tuta.com/",
+    "features": ["End-to-end encryption", "No ads", "German jurisdiction"],
+    "tags": ["email", "encryption", "privacy"]
+  },
+  {
+    "slug": "photoprism",
+    "name": "PhotoPrism",
+    "description": "Self-hosted AI-powered photo app that respects your privacy.",
+    "link": "https://www.photoprism.app/",
+    "features": ["Self-hosted", "Automatic tagging", "Private cloud gallery"],
+    "tags": ["photo", "self-hosted", "privacy"]
+  },
+  {
+    "slug": "librespeed",
+    "name": "LibreSpeed",
+    "description": "Self-hosted speed test that doesn’t share your data with third parties.",
+    "link": "https://librespeed.org/",
+    "features": ["Self-hosted", "No ads", "No tracking"],
+    "tags": ["network", "self-hosted", "utility"]
+  },
+  {
+    "slug": "beaker-browser",
+    "name": "Beaker Browser",
+    "description": "Experimental peer-to-peer browser for building and hosting websites from your computer.",
+    "link": "https://beakerbrowser.com/",
+    "features": ["Peer-to-peer", "Self-publishing", "Decentralized"],
+    "tags": ["browser", "decentralized", "web"]
+  },
+  {
+    "slug": "convos",
+    "name": "Convos",
+    "description": "Always online web IRC client that's easy to use and privacy-focused.",
+    "link": "https://convos.chat/",
+    "features": ["IRC", "Always online", "Private hosting"],
+    "tags": ["chat", "IRC", "privacy"]
+  },
+  {
+    "slug": "pleroma",
+    "name": "Pleroma",
+    "description": "Lightweight federated social networking server compatible with Mastodon.",
+    "link": "https://pleroma.social/",
+    "features": ["Federated", "Lightweight", "Customizable"],
+    "tags": ["social", "federated", "decentralized"]
+  }
+]

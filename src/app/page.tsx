@@ -1,103 +1,87 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import { useState } from "react";
+import tools from "@/data/tools.json";
+import Link from "next/link";
+
+export default function HomePage() {
+  const [search, setSearch] = useState("");
+
+  const filteredTools = tools.filter(
+    (tool) =>
+      tool.name.toLowerCase().includes(search.toLowerCase()) ||
+      tool.tags.some((tag) => tag.toLowerCase().includes(search.toLowerCase()))
+  );
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="bg-white dark:bg-gray-900 min-h-screen text-black dark:text-white">
+      {/* Header */}
+      <header className="flex items-center justify-between px-6 py-4 shadow bg-gray-100 dark:bg-gray-800 sticky top-0 z-10">
+        <h1 className="text-2xl font-bold text-indigo-600 dark:text-violet-400">
+          🔐 DigitalEscape
+        </h1>
+        <p className="text-2xl md:text-3xl font-semibold text-center text-white bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent animate-fade-in mb-6">
+          Your trusted guide to the best privacy-first tools
+        </p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="flex items-center gap-4">
+          <input
+            type="text"
+            placeholder="Search tools..."
+            className="px-4 py-2 rounded-md border shadow-sm focus:outline-none focus:ring focus:border-indigo-300 dark:bg-gray-700 dark:text-white"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </header>
+
+      {/* Body: Sidebar + Grid */}
+      <div className="flex gap-6 px-6 py-6">
+        {/* Sidebar (filters or tags) */}
+        <aside className="w-64 hidden md:block">
+          <h2 className="text-lg font-semibold mb-3">📂 Categories</h2>
+          <ul className="space-y-2">
+            <li className="text-sm text-gray-600 dark:text-gray-300">
+              🔐 Privacy
+            </li>
+            <li className="text-sm text-gray-600 dark:text-gray-300">
+              🛡️ Security
+            </li>
+            <li className="text-sm text-gray-600 dark:text-gray-300">
+              📧 Email
+            </li>
+            <li className="text-sm text-gray-600 dark:text-gray-300">🌍 VPN</li>
+            <li className="text-sm text-gray-600 dark:text-gray-300">
+              🔒 Passwords
+            </li>
+            {/* Add dynamic filters later if you want */}
+          </ul>
+        </aside>
+
+        {/* Main content area */}
+        <section className="flex-1 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          {filteredTools.map((tool) => (
+            <Link key={tool.slug} href={`/${tool.slug}`}>
+              <div className="card cursor-pointer hover:shadow-lg transition-all hover:scale-[1.02]">
+                <h3 className="text-xl font-semibold mb-1">{tool.name}</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
+                  {tool.description}
+                </p>
+                <div className="text-xs flex flex-wrap gap-1">
+                  {tool.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-indigo-100 dark:bg-violet-800 text-indigo-700 dark:text-violet-100 px-2 py-0.5 rounded-md"
+                    >
+                      #{tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+          ))}
+        </section>
+      </div>
+    </main>
   );
 }
