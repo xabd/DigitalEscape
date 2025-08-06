@@ -1,20 +1,17 @@
-// File: app/[slug]/page.tsx
 import tools from "@/data/tools.json";
 import { notFound } from "next/navigation";
 
-// Generate static params from the tools list
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return tools.map((tool) => ({ slug: tool.slug }));
 }
 
-// Define the expected props structure for the page
 type ToolDetailPageProps = {
   params: {
     slug: string;
   };
 };
 
-export default async function ToolDetail({ params }: ToolDetailPageProps) {
+export default function ToolDetailPage({ params }: ToolDetailPageProps) {
   const tool = tools.find((t) => t.slug === params.slug);
   if (!tool) return notFound();
 
